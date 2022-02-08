@@ -10,8 +10,10 @@
   
   <xsl:template match="book">
      <p>
+      <xsl:value-of select="obra"/>
 
       <h2>
+
      <xsl:value-of select="title"/>
      </h2>
   </p>

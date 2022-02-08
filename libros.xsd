@@ -10,21 +10,29 @@
     <xs:element name="book">
         <xs:complexType>
             <xs:sequence>
+                <xs:element ref="obra"/>
                 <xs:element ref="title"/>
                 <xs:element maxOccurs="unbounded" ref="author"/>
+                <xs:element ref="año"/>
                 <xs:element ref="year"/>
+                <xs:element ref="precio"/>
                 <xs:element ref="price"/>
+                <xs:element ref="euros"/>
             </xs:sequence>
             <xs:attribute name="category" use="required" type="xs:NCName"/>
             <xs:attribute name="cover" type="xs:NCName"/>
         </xs:complexType>
     </xs:element>
+    <xs:element name="obra" type="xs:string"/>
     <xs:element name="title">
         <xs:complexType mixed="true">
             <xs:attribute name="lang" use="required" type="xs:NCName"/>
         </xs:complexType>
     </xs:element>
     <xs:element name="author" type="xs:string"/>
+    <xs:element name="año" type="xs:string"/>
     <xs:element name="year" type="xs:integer"/>
+    <xs:element name="precio" type="xs:string"/>
     <xs:element name="price" type="xs:decimal"/>
+    <xs:element name="euros" type="xs:string"/>
 </xs:schema>
