@@ -12,13 +12,14 @@
      <p>
 
       <h2>
+      <xsl:value-of select="obra"/>
 
-<xsl:value-of select="obra"/>
      <xsl:value-of select="title"/>
-    
+     </h2>
   </p>
 
-      <ul><li>
+  
+    <ul><li>
       <p>
        <xsl:value-of select="año"/>
       
@@ -40,7 +41,6 @@
       </p> 
     </li>
     </ul>
-
     
   </xsl:template>
   
