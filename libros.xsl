@@ -18,19 +18,17 @@
     
   </p>
 
-  <p>
-	  <ul>
+      <ul><li>
+      <p>
+       <xsl:value-of select="año"/>
+      
+        <xsl:value-of select="year"/></p> </li>
+   
+    </ul>
 
-      <li> <xsl:value-of select="año"/>
-
-     <xsl:value-of select="year"/></li>
-		  </ul>
-
-</p>
-
+<ul>
+  <li>
      <p>
-	      <ul>
-		      <li> 
               <xsl:value-of select="precio"/>
 
     <span>
@@ -38,9 +36,10 @@
      <xsl:value-of select="price"/>
      </span>
           <xsl:value-of select="euros"/>
-    </li>
-		        </ul>
+
       </p> 
+    </li>
+    </ul>
 
     
   </xsl:template>
